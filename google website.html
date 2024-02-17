@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google</title>
+    <link rel="icon" type="image/x-icon" href="google/g.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        img {
+            display: block;
+            margin:auto;
+        }
+        .nav-bar {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .nav-list {
+            align-items: center;
+            display: flex;
+            width: 200%;
+            justify-content: flex-end;
+            margin: 0 auto;
+        }
+        .nav-list li {
+            list-style-type: none;
+            padding: 26px 26px;
+            text-align: right;
+        }
+        .nav-right {
+            width:20%;
+            text-align: left;
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .nav-list li a:hover {
+            color: grey;
+        }
+        .text {
+            width: 50%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid black;
+            outline: none;
+            font-size: 16px;
+            max-width: 600px;
+            margin-left: 350px;
+            padding: 10px;
+            text-align: left;
+            align-items: center;
+        }
+        button {
+            background-color: #f8f9fa;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 570px;
+            border: 1px solid black;
+        }
+        .btn{
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="gmail" target="_top">Gmail</a></li>
+            <li><a href="images" target="_top">Images</a></li>
+        </ul>
+        <div class="nav-right">
+            <button type="button" class="btn btn-primary" target="_top">Sign In</button>
+        </div>
+    </nav>
+    <img src="google/g2.jpg" alt="google" width="400" height="150">
+    <input type="text" class="text" id="search" name="typehere"><br><br>
+    <button onclick="performSearch()">Google Search</button>
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById('search').value;
+            alert('Searching for: ' + searchTerm);
+        }
+    </script>
+</body>
+</html>
